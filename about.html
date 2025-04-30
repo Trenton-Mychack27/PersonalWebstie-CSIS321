@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ec;
+    color: white;
+  }
+  
+  header {
+    background-color: #004d40;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .content {
+    display: flex;
+    background-color: #00695c;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .text-section {
+    max-width: 700px;
+  }
+  
+  .text-section .map-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .text-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+</style>>  
+<body>
+  <header>
+    <div class="logo">TM</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="image-section">
+        <img src="restaurant.png" alt="Student eating at a restaurant">
+      </div>
+      <div class="text-section">
+        <img src="siena.png" alt="Map" class="map-image">
+        <p>
+          I'm a Computer Science student at Sierra College (Class of 2025) with a 3.70 GPA and a strong foundation in Java, Python, GitHub, and systems-level programming. My academic focus spans data structures, database management, assembly language, logic design, and more.<br><br>
+          Currently, I lead an interdisciplinary team of Psychology and Computer Science students working to develop a machine learning project for detecting suicidal ideation. I also serve as a Computer Science tutor, supporting dozens of students with their technical coursework.<br><br>
+          During a recent internship, I worked with a team to develop custom APIs, contributed to training datasets, and built AI models in Python to improve mental health resource accessibility. I’ve also completed a 150-hour research internship where I explored the impact of technology on Gen Z’s emotional well-being.<br><br>
+          In my free time, I'm an active volunteer in Siena’s Annual Programming Contest and passionate about merging technical knowledge with creative problem solving. My hobbies include military experience, resistance study, and a deep commitment to authentic cuisine design.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
