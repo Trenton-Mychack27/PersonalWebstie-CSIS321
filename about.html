@@ -2,112 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Trenton Mychack Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
   body {
     font-family: Arial, sans-serif;
-    background-color: #e6f0ec;
+    background-color: #D0F0E0;
     color: white;
+    margin: 0;
+    padding: 0;
   }
-  
   header {
-    background-color: #004d40;
+    background-color: #004c45;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    font-family: sans-serif;
+  header h1 {
+    margin: 0;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li a {
+  nav a {
     color: white;
+    margin-left: 20px;
     text-decoration: none;
-    font-size: 16px;
   }
-  
-  main {
-    padding: 40px;
-  }
-  
-  .content {
+  .container {
     display: flex;
-    background-color: #00695c;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #D0F0E0;
+  }
+  .intro {
+    background-color: #1c4d45;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80%;
+    justify-content: center;
   }
-  
-  .image-section img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+  .intro img {
+    width: 120px;
+    height: auto;
     margin-right: 20px;
+    border: 5px solid #D0F0E0;
   }
-  
-  .text-section {
-    max-width: 700px;
+  .map {
+    background-color: #1c4d45;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
   }
-  
-  .text-section .map-image {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+
+  .about {
+    background-color: #1c4d45;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
   }
-  
-  .text-section p {
-    font-size: 14px;
-    line-height: 1.6;
+  .about h3 {
+    text-align: center;
+    text-decoration: underline;
   }
-</style>>  
+  .about p {
+    margin: 20px 0;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
 <body>
+
   <header>
-    <div class="logo">TM</div>
+    <h1>TM</h1>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Resume</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
     </nav>
   </header>
 
-  <main>
-    <section class="content">
-      <div class="image-section">
-        <img src="restaurant.png" alt="Student eating at a restaurant">
-      </div>
-      <div class="text-section">
-        <img src="siena.png" alt="Map" class="map-image">
+  <div class="container">
+    <div class="intro">
+      <img src="restaurant.png" alt="Trenton Mychack">
+      <img src="golf.jpg" alt="Trenton Mychack">
+      <img src="hana.jpg" alt="Trenton Mychack">
+      <img src="hana blackandwhite.jpg" alt="Trenton Mychack">
+      <img src="vegas.jpg" alt="Trenton Mychack">
+      <img src="gang.jpg" alt="Trenton Mychack">
+    </div>
+
+    <div class = "map">
+      <h2>My Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.1234567890123!2d-73.7562314846814!3d42.7199292797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0f8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sSiena%20College!5e0!3m2!1sen!2sus!4v1616161616161" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="about">
+      <h3>About me</h3>
+      <div class="about-content">
         <p>
-          I'm a Computer Science student at Sierra College (Class of 2025) with a 3.70 GPA and a strong foundation in Java, Python, GitHub, and systems-level programming. My academic focus spans data structures, database management, assembly language, logic design, and more.<br><br>
-          Currently, I lead an interdisciplinary team of Psychology and Computer Science students working to develop a machine learning project for detecting suicidal ideation. I also serve as a Computer Science tutor, supporting dozens of students with their technical coursework.<br><br>
-          During a recent internship, I worked with a team to develop custom APIs, contributed to training datasets, and built AI models in Python to improve mental health resource accessibility. I’ve also completed a 150-hour research internship where I explored the impact of technology on Gen Z’s emotional well-being.<br><br>
-          In my free time, I'm an active volunteer in Siena’s Annual Programming Contest and passionate about merging technical knowledge with creative problem solving. My hobbies include military experience, resistance study, and a deep commitment to authentic cuisine design.
+          Computer Science student at Siena College with a strong academic record 
+          (cumulative GPA 3.70, major GPA 3.45) and a proven track record on the Dean’s List. 
+          Proficient in Java, and familiar with Python and GitHub, 
+          I have built technical skills in Data Structures, trauma-informed UX design, 
+          Advanced Programming, Database Management, and Computer Architecture. I lead a 
+          trauma-informed website design team focused on aiding preservice teachers in Ukraine, 
+          combining human-centered design with technical problem-solving. My background also includes 
+          U.S. Navy service as an AEGIS Fire Controlman in San Diego, where I managed team training 
+          and an inventory of critical components, contributing to the functionality of a 
+          multi-billion-dollar weapon system. Additionally, I volunteer regularly at Siena’s 
+          Annual Programming Contest, supporting smooth event operations.
         </p>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+
 </body>
 </html>
