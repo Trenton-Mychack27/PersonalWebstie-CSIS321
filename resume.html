@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trenton Mychack Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #D0F0E0;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #004c45;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #D0F0E0;
+  }
+  .intro {
+    background-color: #1c4d45;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+  .intro img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border: 5px solid #D0F0E0;
+  }
+  .column {
+    background-color: #1c4d45;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+    .column h2 {
+        text-decoration: underline;
+    }
+    .column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+    .tilde {
+        font-size: 35px;
+        text-align: center;
+        margin: 20px 0;
+        color: #D0F0E0;
+    }
+    .footer-note {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: bold;
+        background-color: #1c4d45;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 0;
+    }
+
+    .resumepdf {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #004c45;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="website logo.png" alt="School Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="column">
+      <h2>Experience</h2>
+      <p><strong>Key Holder, Cycle Gear, Colonie, NY</strong></p>
+      <ul>
+        <li>Managed store opening/closing procedures, ensuring smooth transitions for public access</li>
+        <li>Handled financial transactions, including store money drops and bank runs</li>
+      </ul>
+      <div class="tilde">~</div>
+      <p><strong>AEGIS Fire Controlman, U.S. Navy, San Diego, CA</strong></p>
+      <ul>
+        <li>Divisional Training Petty Officer: Tracked and managed peers’ training hours</li>
+        <li>Repair Parts Petty Officer: Ordered and supervised $9M worth of electrical and waveguide parts</li>
+        <li>Maintained and repaired sensitive electrical components</li>
+      </ul>
+      <div class="tilde">~</div>
+      <p><strong>Independent Study & Project Lead, Trauma-Informed Website for Ukrainian Preservice Teachers, Siena College</strong></p>
+      <ul>
+        <li>Leading the research and design of a trauma-informed website to support Ukrainian preservice teachers in helping students cope with the ongoing war.</li>
+        <li>Conducting independent research on trauma-informed educational practices and collaborating with educators to develop practical resources for teachers.</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Java, Python, SQL, HTML, CSS, JavaScript</li>
+      </ul>
+      <div class="tilde">~</div>
+      <ul>
+        <li><strong>Software & Tools:</strong> Figma, Data Structures, Discrete Structures, Algorithms, Database Management, Advanced Programming, Object Oriented Programming</li>
+      </ul>
+      <div class="tilde">~</div>
+      <ul>
+        <li><strong>Technical Skills:</strong> Research, Troubleshooting, System Analysis</li>
+      </ul>
+      <div class="tilde">~</div>
+      <ul>
+        <li><strong>Soft skills:</strong> Leadership, Communication, Time Management</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Education</h2>
+      <p><strong>Siena College, Loudonville, NY</strong><br>
+      Bachelor of Science in Computer Science<br>
+      GPA: 3.7/4.0</p>
+      <div class="tilde">~</div>
+      <p><strong>U.S. Navy, Great Lakes, IL & Dahlgren, VA</strong><br>
+      AEGIS Fire Controlman Training</p>
+      <ul>
+        <li>Basic electronics, electronic circuitry, digital theory, microcomputers, troubleshooting techniques</li>
+        <li>Fire-Controlman ‘A’ school: submarine systems theory, mathematics, computer theory</li>
+        <li>AEGIS Fire-Controlman ‘C’ school: 2D and 3D radar systems, missile ballistics, troubleshooting procedures</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-note">
+    <a href="Trenton Mychack Resume.pdf" target="_blank" class = "resumepdf" download>Click here to download my resume!</a>
+</div>
+
+</body>
+</html>
