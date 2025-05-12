@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trenton Mychack Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #D0F0E0;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #004c45;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .intro {
+    background-color: #004c45;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 60px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .card {
+    background-color: #004c45;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+  
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+</style>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="website logo.png" alt="School Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p>
+      Welcome to my project showcase! Below you'll find a selection of academic 
+      and personal projects that reflect my experience in software development, 
+      problem-solving, and collaborative work. Each card links to a repository or example. Feel free to explore!
+    </p>
+  </div>
+
+  <div class="grid-container">
+    <a href="https://github.com/Trenton-Mychack27/reCaptchaProjectv2" target="_blank" class="card">
+      <h3>Understanding reCAPTCHA</h3>
+      <p>Implementation and analysis of Google’s reCAPTCHA system for verifying users.</p>
+    </a>
+    <a href="https://github.com/SienaCSISAlgorithmsS25/academicshowcase-laiagiraltt" target="_blank" class="card">
+      <h3>Central Train Station Finder</h3>
+      <p>Using Dijkstra’s and BFS to locate the most central station in a rail network.</p>
+    </a>
+    <a href="https://github.com/Trenton-Mychack27/CSIS390Project2" target="_blank" class="card">
+      <h3>HTML Adventure Game</h3>
+      <p>Interactive story game using HTML, CSS, and JavaScript. Choose your path!</p>
+    </a>
+    <a href="https://github.com/Trenton-Mychack27/Ukraine-Website" target="_blank" class="card">
+      <h3>Trauma-Informed Website</h3>
+      <p>Led project for Ukrainian teachers supporting war-affected students.</p>
+    </a>
+    <a href="#" target="_blank" class="card">
+      <h3>Fox and Rabbit Game</h3>
+      <p>Java version of a board game created by Dr. Goldstein’s peers.</p>
+    </a>
+    <a href="https://github.com/SienaCSISAlgorithmsS25/sortingstudy-Trenton-Mychack27" target="_blank" class="card">
+      <h3>Sorting Study Algorithms</h3>
+      <p>Java project comparing sorting algorithms using Big-O complexities.</p>
+    </a>
+  </div>
+
+</body>
+</html>
